@@ -19,8 +19,6 @@ const htmlFiles = allFiles
     }
   });
 
-console.log(htmlFiles);
-
 const server = http.createServer((req, res) => {
   const requestedURL = req.url.slice(1);
   if (htmlFiles.includes(requestedURL)) {
